@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider_example/model/post_model.dart';
-
 import '../services/http_service.dart';
 
 class HomeViewModel extends ChangeNotifier {

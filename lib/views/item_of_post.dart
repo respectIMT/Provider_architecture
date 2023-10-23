@@ -25,7 +25,7 @@ Widget itemOfPost(HomeViewModel viewModel, Post post) {
           backgroundColor: Colors.yellow,
           foregroundColor: Colors.white,
           icon: Icons.edit,
-          label: "Delate",
+          label: "Delete",
         ),
       ],
     ),
