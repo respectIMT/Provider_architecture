@@ -22,7 +22,7 @@ Widget itemOfPost(HomeViewModel viewModel, Post post) {
                   },
                 );
           },
-          backgroundColor: Colors.yellow,
+          backgroundColor: Colors.red,
           foregroundColor: Colors.white,
           icon: Icons.edit,
           label: "Delete",
@@ -45,15 +45,20 @@ Widget itemOfPost(HomeViewModel viewModel, Post post) {
       ],
     ),
     child: Container(
-      padding: EdgeInsets.only(left: 20, right: 20, top: 20),
+      height: 70,
+      width: 370,
+      color: Colors.grey.withOpacity(0.5),
+      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+      margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(post.title.toUpperCase()),
-          SizedBox(
-            height: 5,
+          Text(
+            post.id.toString(),
+            maxLines: 1,
           ),
-          Text(post.title.toUpperCase()),
+          SizedBox(height: 5),
+          Text(post.title, maxLines: 1),
         ],
       ),
     ),
